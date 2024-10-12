@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DB7FCB392CB9F4910032E7F7 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = DB7FCB382CB9F4910032E7F7 /* PromiseKit */; };
+		DB7FCB7F2CB9FC540032E7F7 /* PMKFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = DB7FCB7E2CB9FC540032E7F7 /* PMKFoundation */; };
+		DB7FCBE32CBB202B0032E7F7 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = DB7FCBE22CBB202B0032E7F7 /* SnapshotTesting */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DB77035E2CB796B400AF4504 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -30,7 +36,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DB77036F2CB796B400AF4504 /* Exceptions for "Llyods" folder in "Llyods" target */ = {
+		DB7FCB2A2CB9326D0032E7F7 /* Exceptions for "Llyods" folder in "Llyods" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,7 +49,7 @@
 		DB7703492CB796B300AF4504 /* Llyods */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				DB77036F2CB796B400AF4504 /* Exceptions for "Llyods" folder in "Llyods" target */,
+				DB7FCB2A2CB9326D0032E7F7 /* Exceptions for "Llyods" folder in "Llyods" target */,
 			);
 			path = Llyods;
 			sourceTree = "<group>";
@@ -65,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7FCB7F2CB9FC540032E7F7 /* PMKFoundation in Frameworks */,
+				DB7FCB392CB9F4910032E7F7 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7FCBE32CBB202B0032E7F7 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +134,8 @@
 			);
 			name = Llyods;
 			packageProductDependencies = (
+				DB7FCB382CB9F4910032E7F7 /* PromiseKit */,
+				DB7FCB7E2CB9FC540032E7F7 /* PMKFoundation */,
 			);
 			productName = Llyods;
 			productReference = DB7703472CB796B300AF4504 /* Llyods.app */;
@@ -148,6 +159,7 @@
 			);
 			name = LlyodsTests;
 			packageProductDependencies = (
+				DB7FCBE22CBB202B0032E7F7 /* SnapshotTesting */,
 			);
 			productName = LlyodsTests;
 			productReference = DB77035D2CB796B400AF4504 /* LlyodsTests.xctest */;
@@ -208,6 +220,11 @@
 			);
 			mainGroup = DB77033E2CB796B300AF4504;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DB77039E2CB79BD700AF4504 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				DB7FCB7D2CB9FC1F0032E7F7 /* XCRemoteSwiftPackageReference "Foundation" */,
+				DB7FCBE12CBB202B0032E7F7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DB7703482CB796B300AF4504 /* Products */;
 			projectDirPath = "";
@@ -294,7 +311,6 @@
 				INFOPLIST_FILE = Llyods/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +338,6 @@
 				INFOPLIST_FILE = Llyods/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,6 +584,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB77039E2CB79BD700AF4504 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.2;
+			};
+		};
+		DB7FCB7D2CB9FC1F0032E7F7 /* XCRemoteSwiftPackageReference "Foundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PromiseKit/Foundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		DB7FCBE12CBB202B0032E7F7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB7FCB382CB9F4910032E7F7 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB77039E2CB79BD700AF4504 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		DB7FCB7E2CB9FC540032E7F7 /* PMKFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB7FCB7D2CB9FC1F0032E7F7 /* XCRemoteSwiftPackageReference "Foundation" */;
+			productName = PMKFoundation;
+		};
+		DB7FCBE22CBB202B0032E7F7 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB7FCBE12CBB202B0032E7F7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB77033F2CB796B300AF4504 /* Project object */;
 }
